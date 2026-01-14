@@ -1,22 +1,19 @@
 {
   "name": "evento-aniver",
   "version": "1.0.0",
+  "description": "Trabalho Modulo 22 EBAC",
   "main": "index.js",
-"scripts": {
+  "scripts": {
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.html --public-url ./"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "devDependencies": {
-    "@parcel/transformer-sass": "^2.12.0",
-    "parcel": "^2.12.0",
-    "sass": "^1.80.4",
-    "sharp": "^0.31.3"
-  },
   "dependencies": {
+    "parcel": "^2.12.0",
+    "@parcel/transformer-sass": "^2.12.0",
+    "sass": "^1.80.4",
     "@parcel/source-map": "^2.1.1"
+  },
+  "devDependencies": {
+    "sharp": "^0.31.3"
   }
 }
