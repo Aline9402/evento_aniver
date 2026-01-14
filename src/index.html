@@ -1,15 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evento Aniverário</title>
-    <link rel="stylesheet" href="styles/main.scss">
+    <title>Evento Aniversário</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Ola</h1>
-    <img src="./images/backend.png" alt="">
+    <header class="hero">
+        <div class="container">
+            <img class="hero__logo"  src="./images/ebac_logo.svg" alt="EBAC">
+            <p class="hero__text">
+    O maior evento de desenvolvimento do ano começa em: <br />
+    <span id="contador"></span>
+</p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        João Gardini, 30 - Farroupilha - RS
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Preço</b>
+                        A partir de R$ 50,00
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Quando</b>
+                        15/02/2025 às 19:00hs
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">
+                    Garanta sua vaga
+                </a>
+            </div>
+
+        </div>
+
+    </header>
+
+    <section class="event">
+        <div class="container">
+            <div class="event__details">
+                <h2 class="event__details__title">Front-end</h2>
+                <p class="event__details__description">
+                    Nesta seção, vamos explorar como as tecnologias de Front-end, como HTML, CSS e JavaScript, dão vida à interface do meu evento de aniversário. Aprenda como cada elemento visual foi construído para criar uma experiência imersiva e responsiva para todos os convidados.
+                </p>
+            </div>
+            <img class="event__image" src="./images/frontend.png" alt="Front-end">
+        </div>
+    </section>
+    <section class="event event--ux-ui">
+        <div class="container">
+            <div class="event__details">
+                <h2 class="event__details__title">UX / UI</h2>
+                <p class="event__details__description">
+                    O EBAC Talks também abordará o design UX/UI. Os participantes terão a oportunidade de aprender com especialistas da área, trocar experiências e se atualizar sobre as últimas tendências e tecnologias.
+                </p>
+            </div>
+            <img class="event__image" src="./images/ui-ux.png" alt="UX UI">
+        </div>
+    </section>
+
+    <section class="event event--data-science">
+        <div class="container">
+            <img class="event__image" src="./images/data.png" alt="Data Science">
+            <div class="event__details">
+                <h2 class="event__details__title">Data Science</h2>
+                <p class="event__details__description">
+                    Com foco em Data Science, este evento visa trazer conhecimento e novidades sobre o setor, oferecendo uma visão ampla e abrangente da área para quem deseja aprimorar suas habilidades.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
     <script src="scripts/main.js"></script>
 </body>
 </html>
